@@ -8,7 +8,7 @@ public class Constant {
     public final static String Mobile_number = "01780000000";
     public final static String luma_url = "https://magento.softwaretestingboard.com/";
 
-    public final static String first_name = "Sara1";
+    public final static String first_name = "Sara2";
     public final static String last_name = "Jamil";
     public final static String email_address = "Sara1@yopmail.com";
     public final static String input_password = "Naz@1234";
