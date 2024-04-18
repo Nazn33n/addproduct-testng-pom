@@ -31,6 +31,8 @@
 
             <class name="tests.MenuTest">
             </class>
+            <class name="tests.AddProductTest">
+            </class>
 
         </classes>
     </test>

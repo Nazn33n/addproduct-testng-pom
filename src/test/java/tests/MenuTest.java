@@ -24,7 +24,7 @@ public class MenuTest extends BaseTest{
     public void getHoverToMenu() throws InterruptedException {
         page.getInstance(MenuPage.class).getHoverToMenu().click();
         page.getInstance(MenuPage.class).getHoverToSubMenu().click();
-//        page.getInstance(MenuPage.class).getAddCartButton().click();
+        page.getInstance(MenuPage.class).getChangeTab().click();
         Thread.sleep(3000);
     }
 }

@@ -12,14 +12,18 @@ public class MenuPage extends BasePage {
 
     By mainMenu;
     By subMenu;
-//    By addCart;
+    By designMode;
 
-    public MenuPage(WebDriver driver) throws IOException {
+
+    public MenuPage(WebDriver driver) throws IOException, InterruptedException {
         super(driver);
         mainMenu = By.xpath("//span[normalize-space()='Women']");
         subMenu = By.xpath("/html/body/div[2]/main/div[4]/div[2]/div[1]/div[2]/dl/dd/ol/li[1]/a");
-//        addCart = By.xpath("/html/body/div[2]/main/div[3]/div[1]/div[4]/ol/li[1]/div/div/div[4]/div/div[1]/form/button");
+        designMode = By.id("mode-list");
+
+
     }
+
 
     public WebElement getHoverToMenu() {
         return elementWithWait(mainMenu, "presence");
@@ -46,8 +50,11 @@ public class MenuPage extends BasePage {
         m1.build().perform();
 
     }
-//    public WebElement getAddCartButton() {
-//        return elementWithWait(addCart, "clickable");
-//
-//    }
+
+    public WebElement getChangeTab() {
+        return elementWithWait(designMode, "clickable");
+
+    }
+
+
 }
