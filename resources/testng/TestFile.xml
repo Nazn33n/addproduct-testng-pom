@@ -7,31 +7,33 @@
     <test name = "XPATH Practice">
         <classes>
 
-<!--            <class name="tests.HomeTest">-->
+            <class name="tests.HomeTest">
 
-<!--&lt;!&ndash;             <methods>&ndash;&gt;-->
-<!--&lt;!&ndash;                  <include name="locatorTest"/>&ndash;&gt;-->
-<!--&lt;!&ndash;             </methods>&ndash;&gt;-->
-<!--            </class>-->
+<!--             <methods>-->
+<!--                  <include name="locatorTest"/>-->
+<!--             </methods>-->
+            </class>
 
-<!--            <class name="tests.NewAccountTest">-->
-<!--            </class>-->
+            <class name="tests.NewAccountTest">
+            </class>
 
-<!--            <class name="tests.MyAccountTest">-->
-<!--            </class>-->
+            <class name="tests.MyAccountTest">
+            </class>
 
-<!--            <class name="tests.PasswordDetailTest">-->
-<!--            </class>-->
+            <class name="tests.PasswordDetailTest">
+            </class>
 
-<!--            <class name="tests.LoginTest">-->
-<!--            </class>-->
+            <class name="tests.LoginTest">
+            </class>
 
-<!--            <class name="tests.AddressBookTest">-->
-<!--            </class>-->
+            <class name="tests.AddressBookTest">
+            </class>
 
             <class name="tests.MenuTest">
             </class>
             <class name="tests.AddProductTest">
+            </class>
+            <class name="tests.ShippingAddressTest">
             </class>
 
         </classes>

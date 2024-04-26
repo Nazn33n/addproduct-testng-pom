@@ -23,7 +23,6 @@ public class AddProductPage extends BasePage {
         selectColor = By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[4]/form/div[1]/div/div/div[2]/div/div[1]");
         addToCartButton = By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[4]/form/div[2]/div/div/div[2]/button");
         clickCart = By.xpath("/html/body/div[2]/header/div[2]/div[1]/a");
-
         viewCart = By.xpath("/html/body/div[2]/header/div[2]/div[1]/div/div/div/div[2]/div[5]/div/a/span");
         clickCheckoutButton = By.xpath("/html/body/div[2]/main/div[3]/div/div[3]/div[1]/ul/li[1]/button/span");
     }

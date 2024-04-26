@@ -13,8 +13,10 @@ public class LoginTest extends BaseTest {
     WebDriver driver;
     Page page;
 
+
     public LoginTest(String url) {
         super(url);
+
     }
 
     @BeforeClass

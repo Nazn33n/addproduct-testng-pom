@@ -7,7 +7,7 @@ import pages.AddProductPage;
 import pages.MenuPage;
 import pages.Page;
 
-public class AddProductTest extends BaseTest{
+public class AddProductTest extends BaseTest {
     WebDriver driver;
     Page page;
 
@@ -31,6 +31,7 @@ public class AddProductTest extends BaseTest{
         page.getInstance(AddProductPage.class).getClickCart().click();
         page.getInstance(AddProductPage.class).getViewCartDetail().click();
         page.getInstance(AddProductPage.class).getCheckoutButton().click();
+
         Thread.sleep(3000);
     }
 }

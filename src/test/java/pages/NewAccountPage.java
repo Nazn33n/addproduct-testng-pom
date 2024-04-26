@@ -3,8 +3,11 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.reporters.jq.Main;
 
-import java.io.IOException;
+import java.io.*;
+import java.util.Optional;
+import java.util.logging.Logger;
 
 public class NewAccountPage extends BasePage {
     public NewAccountPage(WebDriver driver) throws IOException {
@@ -28,7 +31,6 @@ public class NewAccountPage extends BasePage {
 
     public WebElement getEmail() {
         return elementWithWait(emailAddress, "presence");
-
     }
 
     public WebElement getPassword() {
@@ -45,4 +47,5 @@ public class NewAccountPage extends BasePage {
         return elementWithWait(submitButton, "clickable");
 
     }
+
 }

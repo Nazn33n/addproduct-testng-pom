@@ -19,7 +19,7 @@ public class Constant {
     public final static String new_password_confirmation = "Ksl@1234";
 
 
-    public final static String login_email = "Sara1@yopmail.com";
+    public final static String login_email = "Naz12@yopmail.com";
     public final static String login_password = "Ksl@1234";
 
 
@@ -31,8 +31,14 @@ public class Constant {
     public final static String zip_code = "1250063295";
 
 
-
-
-
+    public final static String users_Email_Address = "maria@yopmail.com";
+    public final static String users_FirstName = "Maria";
+    public final static String users_LastName = "Chowdhury";
+    public final static String users_Company = "Maria's Cluster";
+    public final static String users_Address = "Kuril";
+    public final static String users_City = "Dhaka";
+    public final static String users_Postal_Code = "12152666";
+    public final static String users_Phone_Number = "016586559856";
+    public final static String address_saved_success_msg = "Thank you for your purchase!";
 
 }
