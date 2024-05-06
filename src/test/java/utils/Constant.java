@@ -14,7 +14,7 @@ public class Constant {
     public final static String new_password_confirmation = "Ksl@1234@";
 
 
-    public final static String login_email = "nazneen17@yopmail.com";
+    public final static String login_email = "nazneen18@yopmail.com";
     public final static String login_password = "Ksl@1234@";
 
 

@@ -25,14 +25,8 @@
                         </class>
                         <class name="tests.LoginTest">
                         </class>
-
-<!--                        <class name = "tests.OrderPlaceTest">-->
-<!--                        </class>-->
-
                         <class name="tests.AddressBookTest">
                         </class>
-<!--                        <class name = "tests.ShippingMethodTest">-->
-<!--                        </class>-->
         </classes>
     </test>
 </suite>
