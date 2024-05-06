@@ -2,6 +2,7 @@ package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddressBookPage;
@@ -29,10 +30,12 @@ public class AddressBookTest extends BaseTest {
         page.getInstance(AddressBookPage.class).getAddressTwo().sendKeys(address_two);
         page.getInstance(AddressBookPage.class).getAddressThree().sendKeys(address_three);
         page.getInstance(AddressBookPage.class).getCityName().sendKeys(city_name);
-        page.getInstance(AddressBookPage.class).getStateDropdown();
+        Select selectRegion = new Select(page.getInstance(AddressBookPage.class).getRegionDropdown());
+        selectRegion.selectByIndex(2);
         page.getInstance(AddressBookPage.class).getZipCode().sendKeys(zip_code);
         page.getInstance(AddressBookPage.class).getCountryDropdown();
-        Thread.sleep(3000);
+        Select selectCountry = new Select(page.getInstance(AddressBookPage.class).getCountryDropdown());
+        selectCountry.selectByIndex(2);
         page.getInstance(AddressBookPage.class).getSaveAddressButton().click();
 
     }

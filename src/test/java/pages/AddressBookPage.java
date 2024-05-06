@@ -8,33 +8,20 @@ import org.openqa.selenium.support.ui.Select;
 import java.io.IOException;
 
 public class AddressBookPage extends BasePage {
-    By editAddress;
-    By phoneNumber;
-    By addressOne;
-    By addressTwo;
-    By addressThree;
-    By cityName;
-    By stateDropdown;
-    By zipCode;
-    By countryDropdown;
-    By saveAddressButton;
+    private By phoneNumber = By.id("telephone");
+    private By addressOne = By.id("street_1");
+    private By addressTwo = By.id("street_2");
+    private By addressThree = By.id("street_3");
+    private By cityName = By.id("city");
+    private By stateDropdown = By.id("region_id");
+    private By zipCode = By.id("zip");
+    private By countryDropdown = By.id("country");
+    private By saveAddressButton = By.cssSelector("button[title='Save Address']");
+    private By editAddress = By.xpath("/html/body/div[2]/main/div[2]/div[1]/div[5]/div[2]/div[1]/div[2]/a");
 
 
     public AddressBookPage(WebDriver driver) throws IOException {
         super(driver);
-
-
-        editAddress = By.xpath("/html/body/div[2]/main/div[2]/div[1]/div[5]/div[2]/div[1]/div[2]/a");
-        phoneNumber = By.xpath("//*[@id=\"telephone\"]");
-        addressOne = By.xpath("//*[@id=\"street_1\"]");
-        addressTwo = By.xpath("//*[@id=\"street_2\"]");
-        addressThree = By.xpath("//*[@id=\"street_3\"]");
-        cityName = By.xpath("//*[@id=\"city\"]");
-        stateDropdown = By.xpath("/html/body/div[2]/main/div[2]/div[1]/form/fieldset[2]/div[3]/div/select");
-        zipCode = By.xpath("//*[@id=\"zip\"]");
-        countryDropdown = By.xpath("/html/body/div[2]/main/div[2]/div[1]/form/fieldset[2]/div[5]/div/select");
-        saveAddressButton = By.xpath("/html/body/div[2]/main/div[2]/div[1]/form/div/div[1]/button");
-
 
     }
 
@@ -58,40 +45,17 @@ public class AddressBookPage extends BasePage {
         return elementWithWait(addressThree, "presence");
     }
 
-    public WebElement getCityName() {
-        System.out.println("City name");
-        return elementWithWait(cityName, "presence");
-    }
+    public WebElement getCityName() { return elementWithWait(cityName, "presence"); }
 
-    public WebElement getStateDropdownElement() {
-        return elementWithWait(stateDropdown, "visibility");
-    }
+    public WebElement getRegionDropdown() { return elementWithWait(stateDropdown, "presence"); }
 
-    public void getStateDropdown() {
-        WebElement z = getStateDropdownElement();
-        Select select = new Select(z);
-        System.out.println("selecting Alaska");
-
-        select.selectByVisibleText("Alaska");
-//        return elementWithWait(stateDropdown, "clickable");
-    }
 
     public WebElement getZipCode() {
         return elementWithWait(zipCode, "presence");
     }
 
-    public WebElement getCountryDropdownElement() {
+    public WebElement getCountryDropdown() {
         return elementWithWait(countryDropdown, "presence");
-    }
-
-    public void getCountryDropdown() {
-        WebElement z1 = getCountryDropdownElement();
-        Select select1 = new Select(z1);
-        System.out.println("selecting DZ");
-
-        select1.selectByValue("DZ");
-
-
     }
 
     public WebElement getSaveAddressButton() {

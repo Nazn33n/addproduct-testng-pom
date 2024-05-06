@@ -8,17 +8,13 @@ import java.io.IOException;
 
 public class LoginPage extends BasePage {
 
-    By loginEmail;
-    By loginPassword;
-    By loginSubmitButton;
+    private By loginEmail = By.id("email");
+    private By loginPassword = By.id("pass");
+    private By loginSubmitButton = By.id("send2");
 
-    public LoginPage(WebDriver driver) throws IOException {
-        super(driver);
-        loginEmail = By.xpath("//*[@id=\"email\"]");
-        loginPassword = By.xpath("/html/body/div[2]/main/div[3]/div/div[3]/div[1]/div[2]/form/fieldset/div[3]/div/input");
-        loginSubmitButton = By.xpath("/html/body/div[2]/main/div[3]/div/div[3]/div[1]/div[2]/form/fieldset/div[4]/div[1]/button");
 
-    }
+
+    public LoginPage(WebDriver driver) throws IOException { super(driver); }
 
     public WebElement getLoginEmail() {
         return elementWithWait(loginEmail, "presence");

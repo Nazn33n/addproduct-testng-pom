@@ -8,13 +8,11 @@ import java.io.IOException;
 
 
 public class MyAccountPage extends HomePage {
-
-    By changePassword;
+    private By changePassword = By.linkText("Change Password");;
 
 
     public MyAccountPage(WebDriver driver) throws IOException {
         super(driver);
-        changePassword = By.linkText("Change Password");
 
     }
 

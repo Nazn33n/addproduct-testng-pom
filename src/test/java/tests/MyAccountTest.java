@@ -27,7 +27,7 @@ public class MyAccountTest extends BaseTest {
     public void changePasswordLinkTest() throws InterruptedException {
         page.getInstance(MyAccountPage.class).getChangePassword().click();
 
-        Thread.sleep(3000);
+
     }
 
 }

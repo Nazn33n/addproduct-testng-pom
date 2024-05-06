@@ -15,7 +15,6 @@ import static utils.Constant.*;
 public class NewAccountTest extends BaseTest {
     WebDriver driver;
     Page page;
-
     Utility utility;
 
     public NewAccountTest(String url) {
@@ -35,7 +34,7 @@ public class NewAccountTest extends BaseTest {
 
         page.getInstance(NewAccountPage.class).getFirstName().sendKeys(first_name);
         page.getInstance(NewAccountPage.class).getLastName().sendKeys(last_name);
-        page.getInstance(NewAccountPage.class).getEmail().sendKeys(utility.getEmail());
+        page.getInstance(NewAccountPage.class).getEmailAddress().sendKeys(utility.getEmail());
         page.getInstance(NewAccountPage.class).getPassword().sendKeys(input_password);
         page.getInstance(NewAccountPage.class).getPasswordConfirmation().sendKeys(password_confirmation);
         page.getInstance(NewAccountPage.class).getSubmitButton().click();

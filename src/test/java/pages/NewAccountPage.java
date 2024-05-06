@@ -3,11 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.reporters.jq.Main;
 
-import java.io.*;
-import java.util.Optional;
-import java.util.logging.Logger;
+import java.io.IOException;
 
 public class NewAccountPage extends BasePage {
     public NewAccountPage(WebDriver driver) throws IOException {
@@ -19,7 +16,7 @@ public class NewAccountPage extends BasePage {
     private By emailAddress = By.name("email");
     private By inputPassword = By.id("password");
     private By passwordConfirmation = By.id("password-confirmation");
-    private By submitButton = By.xpath("/html/body/div[2]/main/div[3]/div/form/div/div[1]/button");
+    private By submitButton = By.cssSelector("button[title='Create an Account'] span");
 
     public WebElement getFirstName() {
         return elementWithWait(firstName, "presence");
@@ -29,8 +26,9 @@ public class NewAccountPage extends BasePage {
         return elementWithWait(lastName, "presence");
     }
 
-    public WebElement getEmail() {
+    public WebElement getEmailAddress() {
         return elementWithWait(emailAddress, "presence");
+
     }
 
     public WebElement getPassword() {
@@ -47,5 +45,4 @@ public class NewAccountPage extends BasePage {
         return elementWithWait(submitButton, "clickable");
 
     }
-
 }

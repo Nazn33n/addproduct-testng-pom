@@ -5,11 +5,10 @@ import java.util.Optional;
 import java.util.logging.Logger;
 
 public class Utility {
-
     static Logger logger = Logger.getLogger(Utility.class.getName());
 
     public String getEmail() throws IOException {
-        String email_template = "naz#@yopmail.com";
+        String email_template = "nazneen#@yopmail.com";
 
         String filename = "email_serial.txt";
 
@@ -35,8 +34,3 @@ public class Utility {
     }
 
 }
-
-
-
-
-

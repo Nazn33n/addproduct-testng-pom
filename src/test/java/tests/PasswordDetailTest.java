@@ -29,6 +29,6 @@ public class PasswordDetailTest extends BaseTest {
         page.getInstance(PasswordDetailPage.class).getNewPassword().sendKeys(new_password);
         page.getInstance(PasswordDetailPage.class).getNewPasswordConfirmation().sendKeys(new_password_confirmation);
         page.getInstance(PasswordDetailPage.class).getSaveButton().click();
-        Thread.sleep(3000);
+
     }
 }
